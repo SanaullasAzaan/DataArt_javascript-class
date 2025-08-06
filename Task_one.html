@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            transition: all 0.3s ease;
+        }
+
+        #theme-toggle {
+            display: none;
+        }
+
+        /* Dark theme styles */
+        body.dark-theme {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        body.dark-theme .logo {
+            color: #ffffff;
+        }
+
+        body.dark-theme .event-card {
+            background-color: #2d2d2d;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-theme .event-image {
+            background-color: #404040;
+        }
+
+        body.dark-theme .event-description {
+            color: #cccccc;
+        }
+
+        body.dark-theme .toggle-switch {
+            background-color: #000000;
+        }
+
+        body.dark-theme .toggle-slider {
+            right: auto;
+            left: 2px;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+            transition: color 0.3s ease;
+        }
+
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toggle-switch {
+            width: 50px;
+            height: 25px;
+            background-color: #4CAF50;
+            border-radius: 25px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-slider {
+            width: 21px;
+            height: 21px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .timeline-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            right: 50px;
+            height: 2px;
+            background-color: #e0e0e0;
+            transform: translateY(-50%);
+        }
+
+        .timeline-year {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .year-label {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .timeline-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #cccccc;
+            border-radius: 50%;
+        }
+
+        .timeline-dot.active {
+            width: 12px;
+            height: 12px;
+            background-color: #2196F3;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .event-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .event-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .event-year {
+            color: #2196F3;
+        }
+
+        .event-image {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .event-description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #666666;
+            transition: color 0.3s ease;
+        }
+
+        .learn-more-btn {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #1976D2;
+        }
+
+        #modal {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle">
+    
+    <header>
+        <div class="logo">Timeline</div>
+        <div class="theme-toggle">
+            <span>Theme</span>
+            <label for="theme-toggle" class="toggle-switch">
+                <div class="toggle-slider"></div>
+            </label>
+        </div>
+    </header>
+
+    <nav>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-year">
+                <span class="year-label">1900</span>
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-year">
+                <span class="year-label">1910</span>
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-year">
+                <span class="year-label">1920</span>
+                <div class="timeline-dot active"></div>
+            </div>
+            <div class="timeline-year">
+                <span class="year-label">1930</span>
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-year">
+                <span class="year-label">1940</span>
+                <div class="timeline-dot active"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="timeline">
+            <article class="event-card">
+                <h1 class="event-title">
+                    <span class="event-year">1977</span> Introduction of the First Personal Computer
+                </h1>
+                
+                <figure class="event-image">
+                    <img src="computer-image.jpg" alt="Computer" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </figure>
+                
+                <p class="event-description">
+                    The first personal computer, introduced in 1977, revolutionized the way people interacted with technology. These early systems were more affordable and accessible to individuals, paving the way for the digital age and transforming various industries.
+                </p>
+                
+                <p class="event-description">
+                    These early systems were more affordable and accessible to individuals, paving the way for the digital age and transforming various industries and everyday life.
+                </p>
+                
+                <button class="learn-more-btn">Learn More</button>
+            </article>
+        </section>
+    </main>
+
+    <div id="modal"></div>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('change', function() {
+            if (this.checked) {
+                document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>

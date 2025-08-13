@@ -1,0 +1,58 @@
+[
+  {
+    "year": 1900,
+    "title": "The Dawn of the 20th Century",
+    "description": "The year 1900 marked the beginning of a new century, bringing with it rapid technological advancements and social changes that would shape the modern world.",
+    "imageURL": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center",
+    "category": "Historical"
+  },
+  {
+    "year": 1910,
+    "title": "The Age of Aviation",
+    "description": "The 1910s saw the birth of commercial aviation, with the first scheduled passenger flights and the establishment of major airlines that would revolutionize global travel.",
+    "imageURL": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&crop=center",
+    "category": "Technology"
+  },
+  {
+    "year": 1920,
+    "title": "The Roaring Twenties",
+    "description": "The 1920s were characterized by unprecedented economic prosperity, cultural dynamism, and social change, including women's suffrage and the rise of jazz music.",
+    "imageURL": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center",
+    "category": "Cultural"
+  },
+  {
+    "year": 1930,
+    "title": "The Great Depression",
+    "description": "The 1930s marked one of the most challenging periods in American history, with widespread economic hardship that led to significant social and political reforms.",
+    "imageURL": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&crop=center",
+    "category": "Economic"
+  },
+  {
+    "year": 1940,
+    "title": "World War II Era",
+    "description": "The 1940s were dominated by World War II, which brought about massive technological advances, including radar, computers, and the atomic bomb.",
+    "imageURL": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center",
+    "category": "Military"
+  },
+  {
+    "year": 1950,
+    "title": "The Post-War Boom",
+    "description": "The 1950s saw unprecedented economic growth, the rise of consumer culture, and the beginning of the space race between the United States and Soviet Union.",
+    "imageURL": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&crop=center",
+    "category": "Economic"
+  },
+  {
+    "year": 1960,
+    "title": "The Space Age",
+    "description": "The 1960s marked humanity's first steps into space, culminating in the historic Apollo 11 moon landing in 1969, forever changing our perspective on Earth and space.",
+    "imageURL": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center",
+    "category": "Technology"
+  },
+  {
+    "year": 1977,
+    "title": "Introduction of the First Personal Computer",
+    "description": "The first personal computer, introduced in 1977, revolutionized the way people interacted with technology. These early systems were more affordable and accessible to individuals, paving the way for the digital age and transforming various industries.",
+    "imageURL": "computer-image.jpg",
+    "category": "Technology"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "timeline-app",
+  "version": "1.0.0",
+  "description": "Historical Timeline Application with TypeScript",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "tsc && python3 -m http.server 8001",
+    "dev:alt": "tsc && python3 -m http.server 3000",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["timeline", "typescript", "history"],
+  "author": "",
+  "license": "MIT"
+}

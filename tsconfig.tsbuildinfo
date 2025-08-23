@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/ui/app.tsx","./src/ui/types.ts","./src/ui/components/eventcard.tsx","./src/ui/components/eventmarker.tsx","./src/ui/components/eventmodal.tsx","./src/ui/components/filterpanel.tsx","./src/ui/components/header.tsx","./src/ui/components/timeline.tsx"],"version":"5.9.2"}

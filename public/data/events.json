@@ -1,0 +1,30 @@
+[
+  {
+    "year": 1977,
+    "title": "Introduction of the First Personal Computer",
+    "description": "The first personal computer, introduced in 1977, revolutionized the way people interacted with technology. These early systems were more affordable and accessible to individuals, paving the way for the digital age and transforming various industries.",
+    "imageURL": "/images/computer-image.jpg",
+    "category": "Technology"
+  },
+  {
+    "year": 1900,
+    "title": "Turn of the Century",
+    "description": "The beginning of a new century marked rapid industrial growth and social change.",
+    "imageURL": "/images/img2.jpg",
+    "category": "Historical"
+  },
+  {
+    "year": 1920,
+    "title": "Roaring Twenties",
+    "description": "A period of economic prosperity with a distinctive cultural edge in the United States and Europe.",
+    "imageURL": "/images/img3.jpg",
+    "category": "Cultural"
+  },
+  {
+    "year": 1940,
+    "title": "World War II Era",
+    "description": "Global conflict that reshaped international relations and technology development.",
+    "imageURL": "/images/img4.jpg",
+    "category": "Military"
+  }
+]
